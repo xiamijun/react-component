@@ -9,6 +9,7 @@ class Home extends React.Component {
         return (
             <ul>
                 <li><Link to="/marquee">跑马灯</Link></li>
+                <li><Link to="/carousel">轮播图</Link></li>
             </ul>
         );
     }

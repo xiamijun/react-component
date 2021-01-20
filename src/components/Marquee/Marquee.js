@@ -1,3 +1,4 @@
+// 文字跑马灯组件
 import React from 'react';
 import './Marquee.css';
 

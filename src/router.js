@@ -1,7 +1,8 @@
 import React from "react"
-import { Route, BrowserRouter, Link, Switch } from "react-router-dom"
+import { Route, BrowserRouter, Switch } from "react-router-dom"
 import HomeIndex from "./pages/home";
 import Marquee from "./pages/Marquee";
+import Carousel from "./pages/Carousel";
 class AppRouter extends React.Component {
     render(){
         return (
@@ -11,6 +12,7 @@ class AppRouter extends React.Component {
                     <Switch>
                         <Route exact path="/" component={HomeIndex} />
                         <Route exact path="/marquee" component={Marquee}/>
+                        <Route exact path="/carousel" component={Carousel}/>
                     </Switch>
                 </div>
             </BrowserRouter>

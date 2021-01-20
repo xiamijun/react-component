@@ -3,6 +3,8 @@ react组件
 
 ## 文字跑马灯
 
+Marquee
+
 横排，文字滚动
 
 | 参数       | 说明                                                | 类型     | 默认值 |
@@ -13,3 +15,9 @@ react组件
 | data       | 播放的文字                                          | string   | -      |
 
 可利用callbackFn设置轮播多段文字
+
+## 轮播组件
+
+Carousel
+
+包裹住要轮播的dom

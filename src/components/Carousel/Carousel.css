@@ -1,0 +1,79 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.carousel-body {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-trigger {
+    display: inline-block;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.carousel-triggerLeft {
+    left: 16px;
+    color: #ccc;
+    background-image: url('./res/carousel-left.png');
+    transition: .2s;
+}
+
+.carousel-triggerLeft:hover {
+    color: #ff5d23;
+    background-image: url('./res/carousel-left-hover.png');
+}
+
+.carousel-triggerRight {
+    right: 16px;
+    color: #ccc;
+    background-image: url('./res/carousel-right.png');
+    transition: .2s;
+}
+
+.carousel-triggerRight:hover {
+    color: #ff5d23;
+    background-image: url('./res/carousel-right-hover.png');
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+}
+
+.carousel-dot {
+    display: inline-block;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.carousel-dot-active {
+    background-color: #ff5d23;
+}
