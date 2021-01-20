@@ -24,7 +24,7 @@ export default class Marquee extends React.Component {
     const broadcastWidth = broadcast.scrollWidth;
     const { duringTime = 3000, isLoop = true, callbackFn } = this.props;
     const addTime = (parseInt(((broadcastWidth * duringTime / 1000) / containerWidth) * 10, 10) * 100) || 0;
-    const showTime = addTime + (this.props.duringTime || 3000);
+    const showTime = addTime + duringTime;
 
     if (this.isTimerRunning) {
       return;

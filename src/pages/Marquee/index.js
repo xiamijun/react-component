@@ -7,7 +7,6 @@ export default function MarqueePage() {
     <span className="Marquee-page">
       <Marquee
           duringTime={4000}
-          isNeedUpdate={1}
           data="测试很多测试很多测试很多测试很多测试很多测试很多测试很多"
       />
     </span>
