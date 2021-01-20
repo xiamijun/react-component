@@ -3,6 +3,8 @@ import { Route, BrowserRouter, Switch } from "react-router-dom"
 import HomeIndex from "./pages/home";
 import Marquee from "./pages/Marquee";
 import Carousel from "./pages/Carousel";
+import ToolTip from './pages/ToolTip'
+
 class AppRouter extends React.Component {
     render(){
         return (
@@ -13,6 +15,7 @@ class AppRouter extends React.Component {
                         <Route exact path="/" component={HomeIndex} />
                         <Route exact path="/marquee" component={Marquee}/>
                         <Route exact path="/carousel" component={Carousel}/>
+                        <Route exact path="/toolTip" component={ToolTip}/>
                     </Switch>
                 </div>
             </BrowserRouter>

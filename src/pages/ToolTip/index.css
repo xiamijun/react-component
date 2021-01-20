@@ -1,0 +1,10 @@
+.ToolTipPage-title {
+  color: #333;
+  font-weight: bold;
+  margin-top: 200px;
+}
+
+.ToolTipPage-tipText {
+  font-weight: normal;
+  color: #666;
+}

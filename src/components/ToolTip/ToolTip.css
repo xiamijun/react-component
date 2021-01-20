@@ -1,0 +1,98 @@
+.ToolTip {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.ToolTip:hover .ToolTip-content {
+    display: block;
+}
+
+.ToolTip-icon {
+    background-image: url(./res/toolTip.png);
+    width: 16px;
+    height: 16px;
+    transition: .2s;
+}
+
+.ToolTip-icon:hover {
+    background-image: url(./res/toolTip-hover.png);
+}
+
+.ToolTip-content {
+    width: 308px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .1);
+    font-size: 12px;
+    color: #666;
+    padding: 8px 10px;
+    display: none;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    left: -100px;
+    bottom: 30px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.ToolTip-content::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 100px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: #fff #fff transparent transparent;
+    transform: rotate(135deg);
+    box-shadow: 1px -1px 2px rgba(0, 0, 0, .1);
+}
+
+.ToolTipDown {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.ToolTipDown:hover .ToolTipDown-content {
+    display: block;
+}
+
+.ToolTipDown-icon {
+    background-image: url(./res/toolTip.png);
+    width: 16px;
+    height: 16px;
+    transition: .2s;
+}
+
+.ToolTipDown-icon:hover {
+    background-image: url(./res/toolTip-hover.png);
+}
+
+.ToolTipDown-content {
+    width: 308px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .1);
+    font-size: 12px;
+    color: #666;
+    padding: 8px 10px;
+    display: none;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    left: -100px;
+    top: 30px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.ToolTipDown-content::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 100px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    box-shadow: 1px -1px 2px rgba(0, 0, 0, .1);
+    background: #fff;
+}

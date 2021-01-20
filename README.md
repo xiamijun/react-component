@@ -21,3 +21,14 @@ Marquee
 Carousel
 
 包裹住要轮播的dom
+
+## ToolTip提示组件
+
+ToolTip
+
+包裹住要提示的dom
+
+| 参数      | 说明 | 类型             | 默认值 |
+| --------- | ---- | ---------------- | ------ |
+| direction | 方向 | "up" \|\| "down" | up     |
+| style     | 样式 | object           | -      |
